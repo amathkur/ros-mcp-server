@@ -73,5 +73,6 @@ def main():
     finally:
         dev.close()
 
+
 if __name__ == "__main__":
     main()
