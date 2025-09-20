@@ -6,13 +6,6 @@ Order: 1 -> 2 -> 4 -> 3 (forward), then back 3 -> 4 -> 2 -> 1 (return).
 
 import time, argparse
 
-try:
-    from pydobot.dobot import MODE_PTP
-    import pydobot as dobot_mod
-except Exception:
-    from pydobot2.dobot import MODE_PTP
-    import pydobot2 as dobot_mod
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--port", default="/dev/ttyACM0")
